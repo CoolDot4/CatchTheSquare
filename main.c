@@ -28,12 +28,12 @@ int main(void){
     UnloadImage(icone);
 
     int compteur = 0;
-    int tailleCarre = 0;
+    int tailleCarre = 64;
 
     Color fond = WHITE;
 
     int carreX = GetRandomValue(0, 800 - tailleCarre); 
-    int carreY = GetRandomValue(100, 600 - tailleCarre); 
+    int carreY = GetRandomValue(100, 520 - tailleCarre); 
 
     while (!WindowShouldClose()){
 
@@ -73,7 +73,7 @@ int main(void){
             PlaySound(catch);
 
             carreX = GetRandomValue(0, 800 - tailleCarre); 
-            carreY = GetRandomValue(100, 600 - tailleCarre); 
+            carreY = GetRandomValue(100, 520 - tailleCarre); 
 
         }
 
